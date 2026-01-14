@@ -1,11 +1,63 @@
-/* 
+body{
+    background-color: #f6f6f6a4;
+}
+.task-container {
+  max-width: 400px;
+  margin: 20px auto;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-*/
+.task-item {
+  background: #e7e7e7c0;
+  border: 1px solid #ccc;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10px;
+  width: 100%;
+}
+
+.task-text {
+  flex: 1; 
+  text-align: left;
+}
+
+.task-input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #888;        
+  font-size: 16px;
+  cursor: pointer;
+  visibility: hidden; 
+  padding: 0 5px;     
+}
+
+.task-item:hover .delete-btn {
+  visibility: visible; 
+}
+
+.task-footer {
+  background: #e7e7e7c0;
+  border: 1px solid #ccc;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 12px;       
+  color: #555;
+  justify-content: flex-start;       
+}
